@@ -1,17 +1,13 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import ListOne from "../views/ListOne.vue";
+import TaskOne from "../views/TaskOne.vue";
 
-const routes = [
-  {
-    path: "/",
-    name: "home",
-    component: HomeView,
-  },
-];
-
-const router = createRouter({
+export default createRouter({
   history: createWebHistory(process.env.BASE_URL),
-  routes,
+  routes: [
+    { path: "/", component: HomeView },
+    { path: "/list", component: ListOne },
+    { path: "/task/:id", component: TaskOne },
+  ],
 });
-
-export default router;

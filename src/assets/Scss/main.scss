@@ -1,0 +1,35 @@
+body {
+  background: url("../bg.jpg") no-repeat center center fixed;  
+  background-size: cover; 
+  font-family: 'Cormorant Infant', serif;
+  font-weight: 700;
+}
+input {
+  color: rgb(30, 19, 54);
+}
+.input-field>label {
+  font-size: 24px;
+}
+.nav {
+  &-wrapper{
+  font-style: italic;
+  }
+}
+
+.link {
+  font-size: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  background-color: #7e57c2;
+}
+
+.datepicker-date-display, 
+.datepicker-table td.is-selected {
+  background-color: #7e57c2;
+}
+
+.datepicker-cancel, .datepicker-clear, .datepicker-today, .datepicker-done {
+  color: #7e57c2;
+}
