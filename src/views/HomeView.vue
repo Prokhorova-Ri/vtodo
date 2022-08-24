@@ -12,7 +12,7 @@
             required
           />
           <label for="title">Название</label>
-          <span class="helper-text" data-error="Title is required"></span>
+          <span class="helper-text" data-error="Введите название"></span>
           <div class="input-field">
             <textarea
               v-model="description"
@@ -71,5 +71,4 @@ export default {
   },
 };
 </script>
-
 <style></style>

@@ -8,6 +8,6 @@ export default createRouter({
   routes: [
     { path: "/", component: HomeView },
     { path: "/list", component: ListOne },
-    { path: "/task/:id", component: TaskOne },
+    { path: "/task:id", component: TaskOne },
   ],
 });

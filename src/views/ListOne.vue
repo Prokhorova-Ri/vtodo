@@ -22,7 +22,7 @@
         </td>
         <td>{{ task.status }}</td>
         <td>
-          <router-link class="btn btn-small" to="/task/ + task.id"
+          <router-link class="btn btn-small" :to="'task' + task.id"
             >Открыть</router-link
           >
         </td>
