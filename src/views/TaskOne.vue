@@ -21,8 +21,12 @@
           </div>
         </div>
         <input type="text" ref="datepicker" />
-        <button class="btn" type="submit">Обновить</button>
-        <button class="btn purple" type="button">Завершить</button>
+        <div v-if="task.status != 'completed'">
+          <button class="btn" type="submit">Обновить</button>
+          <button class="btn purple" type="button" @click="completeTask">
+            Завершить
+          </button>
+        </div>
       </form>
     </div>
     <p v-else>задачи нет</p>
@@ -59,6 +63,10 @@ export default {
         description: this.description,
         date: this.date.date,
       });
+      this.$router.push("/List");
+    },
+    completeTask() {
+      this.$store.dispatch("completeTask", this.task.id);
       this.$router.push("/List");
     },
   },

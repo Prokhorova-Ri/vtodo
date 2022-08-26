@@ -14,9 +14,14 @@ export default createStore({
       const tasks = state.tasks.concat();
       const idx = tasks.findIndex((t) => t.id === id);
       const task = tasks[idx];
-      const status = new Date(date) > new Date() ? "active" : "outdated";
+      const status = new Date(date) > new Date() ? "активная" : "просрочена";
       tasks[idx] = { ...task, date, description, status };
       state.tasks = tasks;
+      localStorage.setItem("tasks", JSON.stringify(state.tasks));
+    },
+    completeTask(state, id) {
+      const idx = state.tasks.findIndex((t) => t.id === id);
+      state.tasks[idx].status = "завершена";
       localStorage.setItem("tasks", JSON.stringify(state.tasks));
     },
   },
@@ -26,6 +31,9 @@ export default createStore({
     },
     updateTask({ commit }, task) {
       commit("updateTask", task);
+    },
+    completeTask({ commit }, id) {
+      commit("completeTask", id);
     },
   },
   modules: {},
