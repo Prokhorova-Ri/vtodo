@@ -80,6 +80,6 @@ export default {
 
 <style scoped>
 .btn {
-  margin: 5px;
+  margin: 10px;
 }
 </style>

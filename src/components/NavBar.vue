@@ -6,10 +6,10 @@
       >
       <ul class="links">
         <router-link to="/" exact active-class="active">
-          <a class="link" href="/list">Страница 1</a>
+          <a class="link" href="/list">Форма</a>
         </router-link>
         <router-link to="/List" active-class="active">
-          <a class="link" href="#">Страница 2</a>
+          <a class="link" href="#">Список</a>
         </router-link>
       </ul>
     </div>

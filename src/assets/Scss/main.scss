@@ -1,11 +1,18 @@
 body {
   background: url("../bg.jpg") no-repeat center center fixed;  
   background-size: cover; 
-  font-family: 'Cormorant Infant', serif;
-  font-weight: 700;
+  font-size: 20px;
+  font-style: italic;
 }
 input {
   color: rgb(30, 19, 54);
+}
+.dropdown-content li>a, .dropdown-content li>span {
+  color: #7e57c2;
+  font-size: 18px;
+}
+.select-wrapper input.select-dropdown{
+  font-size: 18px;
 }
 .input-field>label {
   font-size: 24px;
@@ -22,7 +29,8 @@ input {
 
 .btn {
   border-radius: 10px;
-  background-color: #7e57c2;
+  background-color: #9676cc;
+  font-size: 16px;
 }
 
 .datepicker-date-display, 
