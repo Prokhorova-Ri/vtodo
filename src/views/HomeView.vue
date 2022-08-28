@@ -57,7 +57,7 @@ export default {
         title: this.title,
         description: this.description,
         id: Date.now(),
-        status: "active",
+        status: "активная",
         date: this.date.date,
       };
       this.$store.dispatch("createTask", task);
