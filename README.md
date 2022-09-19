@@ -1,4 +1,4 @@
-# vtodo
+# vtodo https://prokhorova-ri.github.io/vtodo/
 
 ## Project setup
 ```
